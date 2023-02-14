@@ -5,8 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    /* flex set */
+    .display-flex{display:flex;}
+
+    /* axis change property */
+    .flex-direction-row{ flex-direction: row; }
+    .flex-direction-row-reverse{ flex-direction: row-reverse; }
+    .flex-direction-column{ flex-direction: column; }
+    .flex-direction-column-reverse{ flex-direction: column-reverse; }
+
+    /* wrap */
+    .flex-wrap{ flex-wrap: wrap; }
+    .flex-wrap-reverse{ flex-wrap: wrap-reverse; }
+
+    /* main axis */
+    .justify-content-start{ justify-content: start; }
+    .justify-content-end{justify-content: end;}
+    .justify-content-center{justify-content: center;}
+    
+    /* cross axis */
+    .align-items-start{ align-items: flex-start; }
+    .align-items-end{ align-items: flex-end; }
+    .align-items-center{ align-items: center; }
+    /* div color */
+    #container{
+      width: 100vw;
+      height: 100vh;
+      background-color: antiquewhite;
+    }
+    #container>div{
+      width: 20vw;
+      height: 20vh;
+      background-color: blueviolet;
+      margin: 5px;
+    }
+    /* div mid-cen */
+    .mid-cen{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      color: white;
+      
+    }
+  </style>
 </head>
 <body>
-  
+  <div id="container" class="display-flex justify-content-center align-items-center">
+    <div class="mid-cen">1</div>
+    <div class="mid-cen">2</div>
+    <div class="mid-cen">3</div>
+    <div class="mid-cen">4</div>
+  </div>
 </body>
 </html>
